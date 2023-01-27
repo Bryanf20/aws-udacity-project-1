@@ -18,12 +18,12 @@ I separated the datetime into year, month, day, and hour for the additional feat
 
 ### How much better did your model preform after adding additional features and why do you think that is?
 
-The RMSE score decreased from 1.84484 to 0.0.46624, which shows an improvement.
+The RMSE score decreased from 1.78825 to 0.0.46063, which shows an improvement.
 
 ## Hyper parameter tuning
 ### How much better did your model preform after trying different hyper parameters?
 
-After tuning hyper parameters I had no improvement the RMSE score of my model remained thesame as it was after i add additional features.
+After tuning hyper parameters I had an improvement with the RMSE score of my model which changed fron 0.46063 to 0.45665
 
 ### If you were given more time with this dataset, where do you think you would spend more time?
 
@@ -32,9 +32,9 @@ I will spend more time tuning the hyper parameters and adding custom hyper param
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |model|hpo1|hpo2|hpo3|score|
 |--|--|--|--|--|
-|initial|1|8|20|1.84484|
-|add_features|1|8|20|0.46624|
-|hpo|2|6|15|0.46624|
+|initial|1|8|20|1.78825|
+|add_features|1|8|20|0.46063|
+|hpo|1|6|20|0.45665|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -50,6 +50,6 @@ TODO: Replace the image below with your own.
 
 ## Summary
 
-This is a regression model built from Kaggle Bike Sharing demand dataset. After the initial training a score of 1.84484 was gotten and when i split the datetime column to hour, day, month and year I got a score of 0.46624. But when i tune the some hyper parameters, i didn't notice any change in the score.
+This is a regression model built from Kaggle Bike Sharing demand dataset. After the initial training a score of 1.84484 was gotten and when i split the datetime column to hour, day, week, month and year I got a score of 0.46063. But when i tune the some hyper parameters, I had a score of 0.45665.
 
 I believe that with other training algorithms and spending more time on tuning the hyper parameters i can improve my score.
